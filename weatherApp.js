@@ -24,7 +24,7 @@ function getWeather(currentLocation) {
       let date = new Date(data.dt + 1000*data.timezone)
         console.log(data.name + ", " + data.sys.country)
         console.log(date.toISOString())
-        console.log(Math.floor(data.main.temp - 273) + " Celsius")
+        console.log(Math.floor(data.main.temp - Kelvin) + " Celsius")
         console.log(data.weather)
     }
     
